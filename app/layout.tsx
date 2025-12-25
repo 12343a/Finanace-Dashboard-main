@@ -20,7 +20,7 @@ export const metadata: Metadata = siteConfig;
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
           <QueryProviders>
@@ -31,7 +31,7 @@ const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
           </QueryProviders>
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 };
 

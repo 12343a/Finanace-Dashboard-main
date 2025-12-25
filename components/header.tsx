@@ -1,5 +1,5 @@
 import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
-import { Loader2 } from "lucide-react";
+import { Loader2, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,13 +21,15 @@ export const Header = () => {
           </div>
 
           <div className="flex items-center gap-x-2">
-            <ClerkLoaded>
+            {/* <ClerkLoaded>
               <UserButton afterSignOutUrl="/" />
             </ClerkLoaded>
 
             <ClerkLoading>
               <Loader2 className="size-8 animate-spin text-slate-400" />
-            </ClerkLoading>
+            </ClerkLoading> */}
+
+            <User className="size-8 text-white" />
 
             <Link
               href={links.sourceCode}
